@@ -1,0 +1,52 @@
+html, body, header, main, a, h1, h2, div, ul, li, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*font-family: actor, sans-serif;*/
+  font-family: source-sans-pro, sans-serif;
+  /*font-family: poiret-one, sans-serif;*/
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #000;
+  background-color: #fff;
+}
+
+a, a:link, a:hover, a:visited {
+  text-decoration: none;
+}
+
+h1#logo a{
+  color: #000;
+  font-weight: 300;
+}
+
+h1#logo a:hover{
+  font-weight: 600;
+}
+
+h1#logo{
+  text-shadow:2px 2px 2px #aaa;
+}
+
+div.card {
+  border: 1px solid HSL(0, 0%, 47%);
+  margin: 10px;
+  max-width: 600px;
+}
+
+ul {
+  max-width: 100%;
+}
+
+li {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-group-item {
+  background-color: HSL(0, 0%, 87%)
+}

@@ -1,7 +1,7 @@
-<h2>Individial Show Page</h2>
+<h2>Individual Show Page</h2>
 
 {{SongShowViewModel.song.title}}
 {{SongShowViewModel.song.artist}}
 {{SongShowViewModel.song.genre}}
 {{SongShowViewModel.song.audio_url}}
-{{SongShowViewModel.song.album_art}}
+<img data-ng-src="{{SongShowViewModel.song.album_art}}"/>
