@@ -2,26 +2,6 @@
 
 <div data-ng-repeat="song in SongIndexViewModel.songs | orderBy:'-title'" class="container-fluid">
 
-  <div class="song-content">
-
-    <div class="song-details">
-      <ul>
-        <li class="song-li">
-          <strong><span class="song-details-heading">Title:</span></strong> {{song.title}}
-        </li>
-        <li class="song-li">
-          <strong><span class="song-details-heading">Artist:</span></strong> {{song.artist}}
-        </li>
-        <li class="song-li">
-          <strong><span class="song-details-heading">Genre:</span></strong> {{song.genre}}
-        </li>
-      </ul>
-    </div> <!-- ends song details -->
-
-    <div class="album-art">
-      <img data-ng-src="{{song.album_art}}"/>
-    </div> <!-- ends album art div -->
-
-  </div> <!-- ends song content -->
+  <song-show data-song="song"></song-show>
 
 </div> <!-- ends repeat div -->
