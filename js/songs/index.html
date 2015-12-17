@@ -1,7 +1,7 @@
 <!-- <h3><a data-ui-sref="grumbleNew">New Grumble</a></h3> -->
 
-<div data-ng-repeat="song in SongIndexViewModel.songs | orderBy:'-title'" class="container-fluid">
+  <div id="song-div" data-ng-repeat="song in SongIndexViewModel.songs | orderBy:'-title'">
 
-  <song-show data-song="song"></song-show>
+    <song-show data-song="song"></song-show>
 
-</div> <!-- ends repeat div -->
+  </div>
