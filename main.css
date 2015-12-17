@@ -1,3 +1,7 @@
+/*************************************************
+MAIN CSS
+*************************************************/
+
 html, body, header, main, a, h1, h2, div, ul, li, img {
   margin: 0;
   padding: 0;
@@ -5,41 +9,101 @@ html, body, header, main, a, h1, h2, div, ul, li, img {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  background-color: HSL(0, 0%, 78%);
+}
+
 body {
   /*font-family: actor, sans-serif;*/
   font-family: source-sans-pro, sans-serif;
+  /*font-family: arial;*/
   /*font-family: poiret-one, sans-serif;*/
   letter-spacing: 1px;
   font-weight: 100;
   color: #000;
   background-color: #fff;
+  font-size: 4vw;
+  margin: 0 auto;
+  max-width: 90%;
 }
+
+/*************************************************
+LINKS
+*************************************************/
 
 a, a:link, a:hover, a:visited {
   text-decoration: none;
 }
 
+/*************************************************
+HEADINGS
+*************************************************/
 h1#logo a{
   color: #000;
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+h1#logo a{
+  color: #000;
+  font-weight: 600;
+  font-size: 5rem;
+  text-shadow: 2px 2px 2px gray;
 }
 
 h1#logo a:hover{
-  font-weight: 600;
+  font-weight: 900;
+  color: #0D8C95;
 }
 
-h1#logo{
-  text-shadow:2px 2px 2px #aaa;
+span.song-details-heading {
+  color: HSL(0, 0%, 93%);
+  font-size: 4vw;
 }
 
-div.card {
-  border: 1px solid HSL(0, 0%, 47%);
-  margin: 10px;
-  max-width: 600px;
+/*************************************************
+SONG CONTENT
+*************************************************/
+
+div.song-content {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  /*background-color: HSL(38, 100%, 48%);*/
+  background-color: #14bcc8;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+div.song-content:hover {
+  background-color: #50E6F1;
+}
+
+div.song-details {
+  width: 70%;
+  padding: 5px;
+}
+
+div.album-art {
+  width: 30%;
+}
+
+div.album-art img {
+  border-radius: 5px;
+  width: 100%;
 }
 
 ul {
   max-width: 100%;
+  list-style: none;
+  margin: 5px;
 }
 
 li {
@@ -47,6 +111,8 @@ li {
   height: auto;
 }
 
-.list-group-item {
-  background-color: HSL(0, 0%, 87%)
+@media (min-width: 1000px) {
+  body {
+    font-size: 3rem;
+  }
 }

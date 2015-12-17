@@ -1,24 +1,27 @@
-<div class="container">
-  <h2>Songs</h2>
-</div>
-
 <!-- <h3><a data-ui-sref="grumbleNew">New Grumble</a></h3> -->
 
-<div data-ng-repeat="song in SongIndexViewModel.songs | orderBy:'-created_at'" class="container-fluid">
+<div data-ng-repeat="song in SongIndexViewModel.songs | orderBy:'-title'" class="container-fluid">
 
-  <div class="card">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">
-        <strong>Title:</strong> {{song.title}}</li>
-      <li class="list-group-item">
-        <strong>Artist:</strong> {{song.artist}}</li>
-      <li class="list-group-item">
-        <strong>Genre:</strong> {{song.genre}}</li>
-      <li class="list-group-item">
-        <strong>Audio Url:</strong> {{song.audio_url}}</li>
-      <li class="list-group-item text-center">
-        <img data-ng-src="{{song.album_art}}"/>
-      </li> 
-    </ul>
-  </div>
-</div>
+  <div class="song-content">
+
+    <div class="song-details">
+      <ul>
+        <li class="song-li">
+          <strong><span class="song-details-heading">Title:</span></strong> {{song.title}}
+        </li>
+        <li class="song-li">
+          <strong><span class="song-details-heading">Artist:</span></strong> {{song.artist}}
+        </li>
+        <li class="song-li">
+          <strong><span class="song-details-heading">Genre:</span></strong> {{song.genre}}
+        </li>
+      </ul>
+    </div> <!-- ends song details -->
+
+    <div class="album-art">
+      <img data-ng-src="{{song.album_art}}"/>
+    </div> <!-- ends album art div -->
+
+  </div> <!-- ends song content -->
+
+</div> <!-- ends repeat div -->
