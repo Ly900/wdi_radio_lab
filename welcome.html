@@ -13,6 +13,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.0.9/angular-cookie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-token-auth/0.0.28/ng-token-auth.min.js"></script>
+
+
   <script src="js/app.js"></script>
   <script src="js/songs/songs.js"></script>
   <script src="js/songs/index.controller.js"></script>
@@ -20,6 +24,8 @@
   <script src="js/songs/show.controller.js"></script>
   <script src="//use.edgefonts.net/actor;poiret-one;source-sans-pro.js"></script>
   <script src="js/songs/song.directive.js"></script>
+  <script src="js/users/sessions.controller.js"></script>
+  <script src="js/nav/auth.directive.js"></script>
 </head>
 <body>
 
@@ -30,6 +36,8 @@
   <div>
     <h2>Click on the song to hear it!</h2>
   </div>
+
+  <auth-nav></auth-nav>
 
   <main data-ui-view></main>
 
