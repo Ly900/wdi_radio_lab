@@ -1,25 +1,33 @@
-<div class="song-content">
+<div class="song-and-player-div" data-ng-click="toggleAudioDiv()">
 
-  <div class="audio-div">
-    <img src="http://orig09.deviantart.net/e6fe/f/2014/066/6/d/red_play_button__256x256__transparent__by_asavei_florin-d798zp5.png"/>
-  </div>
+  <div class="song-content" ng-click="alert()">
 
-  <div class="song-details">
-    <ul>
-      <li class="song-li">
-        <strong><span class="song-details-heading">Title:</span></strong> {{song.title}}
-      </li>
-      <li class="song-li">
-        <strong><span class="song-details-heading">Artist:</span></strong> {{song.artist}}
-      </li>
-      <li class="song-li">
-        <strong><span class="song-details-heading">Genre:</span></strong> {{song.genre}}
-      </li>
-    </ul>
-  </div>
+    <div class="audio-image">
+      <img src="http://orig09.deviantart.net/e6fe/f/2014/066/6/d/red_play_button__256x256__transparent__by_asavei_florin-d798zp5.png"/>
+    </div>
 
-  <div class="album-art">
-    <img data-ng-src="{{song.album_art}}"/>
+    <div class="song-details">
+      <ul>
+        <li class="song-li">
+          <strong><span class="song-details-heading">Title:</span></strong> {{song.title}}
+        </li>
+        <li class="song-li">
+          <strong><span class="song-details-heading">Artist:</span></strong> {{song.artist}}
+        </li>
+        <li class="song-li">
+          <strong><span class="song-details-heading">Genre:</span></strong> {{song.genre}}
+        </li>
+      </ul>
+    </div>
+
+    <div class="album-art">
+      <img data-ng-src="{{song.album_art}}"/>
+    </div>
+
+  </div> <!-- ends song content div -->
+
+  <div class="audio-player" data-ng-show="divIsVisible">
+    <audio controls data-ng-src="{{song.trustworthyUrl}}"></audio>
   </div>
 
 </div>

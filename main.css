@@ -2,7 +2,7 @@
 MAIN CSS
 *************************************************/
 
-html, body, header, main, a, h1, h2, div, ul, li, img {
+html, body, header, main, a, div, h1, h2, h3, div, ul, li, img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -45,16 +45,17 @@ h1#logo a{
   font-size: 5rem;
 }
 
-h1#logo a{
+h1#logo a {
   color: #000;
   font-weight: 600;
   font-size: 5rem;
-  text-shadow: 2px 2px 2px gray;
+  text-shadow: 2px 2px 2px #0F8089;
 }
 
-h1#logo a:hover{
+h1#logo a:hover {
   font-weight: 900;
   color: #0D8C95;
+  text-shadow: 2px 2px 2px #000;
 }
 
 span.song-details-heading {
@@ -62,11 +63,20 @@ span.song-details-heading {
   font-size: 4vw;
 }
 
+/* this h2 is for the directions on the show page */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #07393D;
+}
+
 /*************************************************
 SONG CONTENT
 *************************************************/
-
-
+div.song-and-player-div {
+  display: flex;
+  flex-direction: column;
+}
 
 div.song-content {
   margin: 10px auto;
@@ -88,11 +98,11 @@ div.song-content:hover {
   background-color: #50E6F1;
 }
 
-div.audio-div {
+div.audio-image {
   max-width: 20%;
 }
 
-div.audio-div img {
+div.audio-image img {
   max-width: 100%;
 }
 
@@ -108,6 +118,10 @@ div.album-art {
 div.album-art img {
   border-radius: 5px;
   width: 100%;
+}
+
+div.audio-player {
+  margin: 0 auto;
 }
 
 ul {
