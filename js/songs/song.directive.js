@@ -13,7 +13,6 @@
       link: function(scope){
         scope.divIsVisible = false;
         scope.toggleAudioDiv = function(){
-          console.log("I was clicked");
           if(scope.divIsVisible){
             scope.divIsVisible = false
           }
