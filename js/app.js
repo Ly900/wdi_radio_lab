@@ -25,23 +25,29 @@
     function RouterFunction($stateProvider){
       $stateProvider
       .state("songIndex", {
-        url: "/songs",
+        url: "welcome.html#/songs",
         templateUrl: "js/songs/index.html",
         controller: "SongIndexController",
         controllerAs: "SongIndexViewModel"
       })
-      .state("songShow", {
-        url: "/songs/:id",
-        templateUrl: "js/songs/show.html",
-        controller: "SongShowController",
-        controllerAs: "SongShowViewModel"
-      })
+      // .state("songShow", {
+      //   url: "/songs/:id",
+      //   templateUrl: "js/songs/show.html",
+      //   controller: "SongShowController",
+      //   controllerAs: "SongShowViewModel"
+      // })
       .state("signin", {
-        url: "/signin",
+        url: "welcome.html#/signin",
         templateUrl: "js/users/signin.html",
         controller: "SessionsController",
         controllerAs: "SessionsViewModel"
       })
+      .state("signout", {
+        url: "welcome.html#/signout",
+        templateUrl: "js/users/signout.html",
+        controller: "SessionsController",
+        controllerAs: "SessionsViewModel"
+      });
     } //ends RouterFunction
 
 
